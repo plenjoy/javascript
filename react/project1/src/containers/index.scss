@@ -1,0 +1,22 @@
+
+
+.app {
+  clear: both;
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .side-bar {
+    position: absolute;
+    top: 94px;
+    bottom: 0;
+  }
+
+  .work-space {
+    margin-top: 82px;
+  }
+}

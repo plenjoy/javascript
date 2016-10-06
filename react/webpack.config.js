@@ -4,7 +4,7 @@ var path = require('path');
 var args = require('minimist')(process.argv.slice(2));
 
 // List of allowed environments
-var allowedEnvs = ['dev', 'production', 'test'];
+var allowedEnvs = ['dev', 'production'];
 
 // Set the correct environment
 var env;
@@ -20,7 +20,6 @@ if(args._.length > 0 && args._.indexOf('start') !== -1) {
 var configs = {
     dev: require(path.join(__dirname, 'cfg/dev')),
     production: require(path.join(__dirname, 'cfg/dist.js')),
-    test: require(path.join(__dirname, 'cfg/test')),
     colors: true
 };
 
