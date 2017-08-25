@@ -22,10 +22,13 @@
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.5",
     "csv-loader": "^2.1.1",
+    "express": "^4.15.4",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.30.1",
     "style-loader": "^0.18.2",
     "webpack": "^3.5.5",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-dev-server": "^2.7.1",
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
