@@ -1,4 +1,5 @@
 'use strict'
+const webpack = require('webpack');
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
@@ -7,6 +8,10 @@ const vueLoaderConfig = require('./vue-loader.conf')
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
+
+const providePlugin = new webpack.ProvidePlugin({
+  Store: "Store"
+});
 
 module.exports = {
   entry: {
@@ -24,6 +29,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      Store: resolve('src/models/Store.js')
     }
   },
   module: {
@@ -63,5 +69,6 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [providePlugin]
 }
