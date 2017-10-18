@@ -23,8 +23,8 @@ export default {
 
   },
   mounted: function() {
-    console.log(this.$root.Store.isShowLoading);
-
+    //console.log(this.$root.Store.isShowLoading);
+    this.$root.$dispatch('abc');
   }
 }
 

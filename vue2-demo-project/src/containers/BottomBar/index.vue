@@ -16,6 +16,7 @@ export default {
   width: 100%;
   height: 160px;
   background-color: #aaaaaa;
+  flex-shrink: 0;
 }
 
 </style>
