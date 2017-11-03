@@ -25,6 +25,7 @@ export default {
   mounted: function() {
     console.log(this.$root.Store.isShowLoading);
     this.$dispatch('abc');
+    //console.log(this.$root.Store.isShowLoading);
   }
 }
 
