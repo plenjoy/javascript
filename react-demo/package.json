@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "babel-runtime": "6.x",
+    "prop-types": "^15.6.0",
     "react": "15.x",
     "react-dom": "15.x"
   },
@@ -38,8 +39,11 @@
     "eslint-plugin-jsx-a11y": "3.x",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-react": "latest",
+    "extract-text-webpack-plugin": "^3.0.2",
     "husky": "^0.12.0",
+    "node-sass": "^4.6.1",
     "open-browser-webpack-plugin": "0.0.3",
+    "sass-loader": "^6.0.6",
     "style-loader": "~0.13.1",
     "validate-commit-msg": "2.x",
     "webpack": "1.x",
